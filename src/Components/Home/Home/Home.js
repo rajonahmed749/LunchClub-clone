@@ -25,7 +25,7 @@ const Home = () => {
                     <p>We facilitate casual conversations that lead to <br /> not-so-casual professional impact. Powered by AI</p>
                     <Form>
                         <Form.Group as={Row} className="mb-3" controlId="readOnly">
-                            <img onClick={() => history.push("/login")} src={signUp} alt="signup" />
+                            <img onClick={() => history.push("/login")} src={signUp} alt="signup" className="G-login" />
                         </Form.Group>
                         <Form.Group as={Row} className="mb-3" controlId="formBasicEmail">
                             <Col sm="7">

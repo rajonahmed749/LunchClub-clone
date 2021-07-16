@@ -6,20 +6,31 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Weekly from './Components/Weekly/Weekly';
 import Login from './Components/shared/Login/Login';
+import { createContext, useState } from 'react';
+
+export const UserContext = createContext();
 
 function App() {
+
+  const [loggedInUser, setLoggedInUser] = useState({});
   return (
-    <Router>
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+      <Router>
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
+          <Route path="/weekly">
+            <Weekly />
+          </Route>
           <Route path="/login">
-            <Login/>
-          </Route>          
+            <Login />
+          </Route>
         </Switch>
       </Router>
+    </UserContext.Provider>
   );
 }
 
