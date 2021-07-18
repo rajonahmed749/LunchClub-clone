@@ -9,3 +9,9 @@
     i. firebase authentication activate.
     ii. context api created.
     
+4. 18 July - 5.5 hours spent 
+    i. front -end more designed
+    ii. server side setup
+    iii. install needed NPM packages
+    iv. connect MongoDB as a database
+    
