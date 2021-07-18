@@ -14,3 +14,7 @@
 #dropdown{
   margin-right: 70px;
 }
+.formBox{
+  border:  1px solid #d3b1b1;
+  border-radius: 3px;
+}
