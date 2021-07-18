@@ -7,3 +7,10 @@
 .G-login{
   cursor:pointer;
 }
+.userPhoto{
+  width: 30px;
+  border-radius: 50%;
+}
+#dropdown{
+  margin-right: 70px;
+}
