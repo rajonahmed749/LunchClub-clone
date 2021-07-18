@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
 import { Navbar, Nav, Dropdown } from "react-bootstrap";
-import { Link } from 'react-router-dom';
 import { useHistory } from "react-router-dom";
 import { UserContext } from '../../../App';
-// import siteLogo from "../../images/logo.svg."
+import Logo from "../../../images/logo.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarAlt, faCalendarMinus, faCommentDots, faEnvelope, faHome } from '@fortawesome/free-solid-svg-icons';
 
 const MenuBar = () => {
     let history = useHistory();
@@ -17,14 +18,16 @@ const MenuBar = () => {
     return (
         <Navbar bg="light" expand="lg">
             <Navbar.Brand >
-                <Link to="/">Lunch Clone</Link>
+                <img src={Logo} alt="logo"/>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
-                    <Nav.Link>Meeting</Nav.Link>
-                    <Nav.Link >Chat</Nav.Link>
-                    <Nav.Link >Invite</Nav.Link>
+                    <Nav.Link ><FontAwesomeIcon className="mt-3 ml-2" icon={faHome }/></Nav.Link>
+                    <Nav.Link ><FontAwesomeIcon className="mt-3 ml-2" icon={faCalendarMinus}/></Nav.Link>
+                    <Nav.Link ><FontAwesomeIcon  className="mt-3 ml-2" icon={faEnvelope }/></Nav.Link>
+                    <Nav.Link ><FontAwesomeIcon  className="mt-3 ml-2" icon={faCommentDots }/></Nav.Link>
+                    
                     <Nav.Link >
                         <Dropdown>
                             <Dropdown.Toggle variant="link" id="dropdown">
