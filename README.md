@@ -17,8 +17,8 @@
     iii. MongoDB
     iv. Couple of NPM packages
 
-### live site : 
+### Live site : 
     https://lunch-clone.web.app/
 
-#### see server site on heroku 
+#### See server site on heroku 
     https://secure-dusk-66270.herokuapp.com/
