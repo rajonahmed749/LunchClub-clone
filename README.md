@@ -14,8 +14,9 @@
 #### `Backend technologies: `
     i. Node js
     ii. Express js
-    iii. MongoDB
-    iv. Couple of NPM packages
+    iii. MongoDB as Database
+    iv. Heroku as server hosting
+    v. Couple of NPM packages
 
 ### Live site : 
     https://lunch-clone.web.app/
