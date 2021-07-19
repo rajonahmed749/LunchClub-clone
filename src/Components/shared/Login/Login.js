@@ -26,9 +26,9 @@ const Login = () => {
                 const { displayName, email, photoURL } = result.user;
                 const signedInUser = { name: displayName, email, img: photoURL }
                 setLoggedInUser(signedInUser)
-                 history.push('/weekly');
-            }).catch((error) => {                
-                const errorMessage = error.message;                
+                history.push('/weekly');
+            }).catch((error) => {
+                const errorMessage = error.message;
                 alert(errorMessage);
             });
     }

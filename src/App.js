@@ -7,6 +7,7 @@ import {
   Route
 } from "react-router-dom";
 import Weekly from './Components/Weekly/Weekly';
+import Schedule from './Components/Schedule/Schedule';
 import Login from './Components/shared/Login/Login';
 import { createContext, useState } from 'react';
 
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route path="/weekly">
             <Weekly />
+          </Route>
+          <Route path="/schedule">
+            <Schedule />
           </Route>
           <Route path="/login">
             <Login />

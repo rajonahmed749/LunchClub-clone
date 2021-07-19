@@ -15,3 +15,8 @@
     iii. install needed NPM packages
     iv. connect MongoDB as a database
     
+5.  19 July - 5.5 hours spent 
+    i. front -end more designed & api created
+    ii. server side upload on Heroku
+    iii. Mongodb connection secure
+    

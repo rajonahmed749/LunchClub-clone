@@ -3,10 +3,10 @@ import Menubar from '../shared/Menubar/Menubar';
 import ScheduleForm from './ScheduleForm';
 
 const Weekly = () => {
-    return(
+    return (
         <main>
             <Menubar />
-            <ScheduleForm/>
+            <ScheduleForm />
         </main>
     )
 }

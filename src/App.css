@@ -1,20 +1,43 @@
-*{
+* {
   box-sizing: border-box;
 }
-.login-button{
+
+.login-button {
   width: 50px;
 }
-.G-login{
-  cursor:pointer;
+
+.G-login {
+  cursor: pointer;
 }
-.userPhoto{
+
+.userPhoto {
   width: 30px;
   border-radius: 50%;
 }
-#dropdown{
+
+#dropdown {
   margin-right: 70px;
 }
-.formBox{
-  border:  1px solid #d3b1b1;
+
+.formBox {
+  border: 1px solid #d3b1b1;
   border-radius: 3px;
+}
+
+#preloader {
+  margin-left: 400px;
+  margin-top: 20px
+}
+
+.user {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.scheduleCard {
+  background-color: rgb(230, 228, 228);
+  margin: 5px 10px 15px 20px;
+  border-radius: 10px;
+  padding: 20px;
+
 }
