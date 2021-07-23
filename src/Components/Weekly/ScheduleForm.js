@@ -1,22 +1,24 @@
 import React, { useContext, useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { UserContext } from "../../App";
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+
 const ScheduleForm = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     const [pickTime, setPickTime] = useState({})
-    console.log("state", pickTime)
-    const [startDate, setStartDate] = useState(new Date());
-
+    const [value, onChange] = useState(new Date());
+    const maxDate = new Date("7/31/2020");
+    const minDate = new Date("7/27/2020");
 
     let submitSchedule = {
         user: loggedInUser.name,
         userPhoto: loggedInUser.img,
         date: pickTime.time,
-        time: startDate
+        time: value
     }
-    console.log(submitSchedule)
+    // console.log(submitSchedule)
 
     const handleSubmit = () => {
         const url = `https://secure-dusk-66270.herokuapp.com/postSchedule`;
@@ -36,12 +38,18 @@ const ScheduleForm = () => {
             });
     }
 
-
     return (
         <div className="row justify-content-center mt-4">
             <div className="col-md-6 formBox">
                 <h3 className="mb-3" variant="light">Schedule your matches</h3> <br />
-                <span> Pick a date :</span> <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+                <span> Pick a date :</span>
+                <Calendar
+                    maxDate={maxDate}
+                    minDate={minDate}
+                    onChange={onChange}
+                    value={value}
+                />
+                {console.log(value)}
                 <Form>
                     <Form.Control onBlur={(e) => setPickTime({ time: e.target.value })} type="time" placeholder="pick a time" className="w-25 mt-2" />
                     <Button onClick={handleSubmit} className="mt-4" variant="primary" > Post for a week</Button>
