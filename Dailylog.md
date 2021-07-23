@@ -20,3 +20,6 @@
     ii. server side upload on Heroku. </br>
     iii. Mongodb connection secure. </br>
     iv. Heroku connected and upload server. </br>
+
+5.  24 July - 1.5 hours spent  </br>
+    i. Date range added for (mon to fri) </br>
