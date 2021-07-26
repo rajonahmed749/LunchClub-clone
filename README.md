@@ -1,6 +1,4 @@
-# Web Development Assignment (IITB)
-
- ### LunchClub Clone 
+# LunchClub Clone 
 
  ####  This is a Clone web application of LunchClub. In this application, in front-end a user can book a post for his/her next schedule. But before do that he/she have to login. This log in system is authenticate by firebase auth system.The technology i used in this application is given below: 
 
