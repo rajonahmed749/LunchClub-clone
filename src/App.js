@@ -10,6 +10,7 @@ import Weekly from './Components/Weekly/Weekly';
 import Schedule from './Components/Schedule/Schedule';
 import Login from './Components/shared/Login/Login';
 import { createContext, useState } from 'react';
+import Charity from './Components/Charity-page/Charity';
 
 export const UserContext = createContext();
 
@@ -21,7 +22,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-            <Home />
+            <Charity/>
           </Route>
           <Route path="/weekly">
             <Weekly />
